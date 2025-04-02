@@ -1,0 +1,5 @@
+node_modules
+.env
+recycle_bin
+pnpm-lock.yaml
+recycle_bin
