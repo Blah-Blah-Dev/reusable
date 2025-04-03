@@ -6,5 +6,10 @@ blahBlah({
   googleClientId: process.env.GOOGLE_CLIENT_ID!,
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET!,
   googleRefreshToken: process.env.GOOGLE_REFRESH_TOKEN!,
-  searchTerms: JSON.parse(process.env.SEARCH_TERMS!),
+  exactSearchTerms: process.env.EXACT_SEARCH_TERMS
+    ? JSON.parse(process.env.EXACT_SEARCH_TERMS)
+    : [],
+  looseSearchTerms: process.env.LOOSE_SEARCH_TERMS
+    ? JSON.parse(process.env.LOOSE_SEARCH_TERMS)
+    : [],
 });
